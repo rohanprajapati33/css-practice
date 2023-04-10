@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress{
+            background-color: red;
+            height: 3px;
+            animation: load 3s ease-in-out delay 1  fill-mode;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 122px;
+            background-color: rgb(12, 11, 11);
+            
+
+        }
+        main{
+            height: 899px;
+            background-color: blue;
+        }
+        @keyframes load {
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 60vw;
+
+            }
+            100%{
+                width: 100vw;
+            }
+            
+        }
+        @keyframes rotate {
+            0%{
+                transform:rotate(0degree)
+            }
+            100%{
+              transform:rotate(360degree)
+
+            }
+         
+            
+        }
+        .slider{
+            background-color: aqua;
+            height: 600px;
+            width: 100vw;
+            overflow: hidden;
+            margin: auto;
+        }
+         img{
+            display: block;
+            margin: auto;
+        } 
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header>
+
+    </header>
+    <main>
+        <!-- <img src="https://cdn.pixabay.com/photo/2016/11/04/21/34/beach-1799006__480.jpg" alt=""> -->
+        <div class="slider">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJubza2pErHhPxQXp66ZA--nnwQAILWhEAYA&usqp=CAU" alt="">
+     
+        </div>
+    </main>
+</body>
+</html>
